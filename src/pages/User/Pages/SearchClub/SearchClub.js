@@ -20,7 +20,7 @@ import VerticalTabsCalender from "../../Component/VerticalTabsCalender/VerticalT
 import AutoCompleteBox from "../../Component/AutoCompleteBox";
 import { Button } from "@material-ui/core";
 import "./radioCustom.css";
-import Data_SearchClub from "./Data_SearchClub";
+import DataSearchClub from "./DataSearchClub";
 import { Link as NavLink } from 'gatsby'
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -306,7 +306,7 @@ const SearchClub = () => {
     
       {/* Time Section  */}
       <div className={`${classes.root} ${classes.time_sec}`}>
-        {Data_SearchClub.time_sec.map(function (data, index_row) {
+        {DataSearchClub.time_sec.map(function (data, index_row) {
           return (
             <Container>
               <Grid container spacing={3} className={classes.time_item}>
