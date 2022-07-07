@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from "@material-ui/core/styles";
 import bgimg from "../../../../images/bg/homebackgroud.png";
 
-const useStyles = makeStyles({
+export const useStyles = makeStyles({
   home_bg: {
     backgroundImage: `url(${bgimg})`,
     backgroundPosition: "center",
@@ -32,4 +32,3 @@ const useStyles = makeStyles({
   }
 });
 
-export { useStyles };
