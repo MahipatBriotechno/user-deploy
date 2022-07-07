@@ -5,7 +5,7 @@ import React from "react"
 
 import Home from "../Component/Home/Home"
 
-export default function HomePage() {
+const HomePage=()=> {
   
   return (
 
@@ -18,3 +18,4 @@ export default function HomePage() {
 
   )
 }
+export default HomePage
