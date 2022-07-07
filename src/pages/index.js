@@ -1,15 +1,16 @@
 import React from "react"
-import { Match } from '@reach/router'
-
+import { Match,Redirect } from '@reach/router'
+import { Router } from "@reach/router"
 const isBrowser = () => typeof window !== "undefined"
 export default function Home() {
   <>
     <Match path="/">
       {
-        isBrowser() && window.location.replace("/User/Pages/homepage")
-       
+        isBrowser() && window.location.assign("/User/Pages/homepage")
+      //  <Redirect to="/User/Pages/homepage"/>
       }
     </Match>
+  
   </>
 
 }
