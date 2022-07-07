@@ -34,11 +34,11 @@ const SelectMenu = (props) => {
   };
   //   const value = state.{name};
 
-  console.log("options.icon__", options[0].icon);
+ 
 
   return (
     <div>
-      {/* <img src={options[0].icon} /> */}
+      
       <FormControl variant="outlined" className={classes.formControl}>
         <InputLabel htmlFor="outlined-age-native-simple">{lable}</InputLabel>
         <Select
