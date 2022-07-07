@@ -7,6 +7,7 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-theme-material-ui`,
     `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-page-creator`,
