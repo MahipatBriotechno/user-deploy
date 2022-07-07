@@ -7,6 +7,7 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-offline`,
     `gatsby-theme-material-ui`,
     `gatsby-plugin-material-ui`,
     {
