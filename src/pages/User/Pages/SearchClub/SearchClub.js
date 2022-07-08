@@ -20,8 +20,9 @@ import VerticalTabsCalender from "../../Component/VerticalTabsCalender/VerticalT
 import AutoCompleteBox from "../../Component/AutoCompleteBox";
 import { Button } from "@material-ui/core";
 import "./radioCustom.css";
-import DataSearchClub from "./DataSearchClub";
-import { Link as NavLink } from 'gatsby'
+import npkt from "../../../../images/logo/CompositeLayer.svg";
+import dtk from "../../../../images/logo/dtk.svg";
+import { Link as NavLink } from 'gatsby';
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -239,6 +240,136 @@ const SearchClub = () => {
   const [like, setLike] = useState(false);
 
   const [openDialogBox, setOpenDialogBox] = React.useState(false);
+  const time_sec= [
+    {
+      id: 1,
+      title: "Collector Bank Arena (GTG)",
+      image: gtg_logo,
+      location: "Danderyd",
+      km: "3 km bort",
+      favourite: "active",
+      bg: "#0a3133",
+      times: [
+        "6:00",
+        "7:00",
+        "8:00",
+        "9:00",
+        "10:00",
+        "11:00",
+        "12:00",
+        "13:00",
+        "14:00",
+        "15:00",
+        "16:00",
+        "17:00",
+        "18:00",
+        "19:00",
+        "20:00",
+      ],
+
+      table_data: {
+        title: "Tillgängliga banor",
+        date: "Fredag 22 juni, 16:00",
+        table_row: [
+          {
+            col_1: "Bana 1",
+            time: "60 min",
+            sport: { sport: "Tennis", location: "Hard court • Inomhus" },
+            kr: "150 kr",
+          },
+          {
+            col_1: "Bana 1",
+            time: "60 min",
+            sport: { sport: "Tennis", location: "Hard court • Inomhus" },
+            kr: "150 kr",
+          },
+        ],
+      },
+    },
+    {
+      id: 2,
+      title: "Näsbyparks TK",
+      image: npkt,
+      location: "Täby",
+      km: "",
+      favourite: "Favourite",
+      bg: "#5369a3",
+      times: ["14:00", "15:00", "16:00", "17:00", "18:00", "19:00"],
+    },
+    {
+      id: 3,
+      title: "Näsbyparks TK",
+      image: npkt,
+      location: "Täby",
+      km: "",
+      favourite: "Favourite",
+      bg: "#5369a3",
+      times: ["14:00", "15:00", "16:00", "17:00", "18:00", "19:00"],
+    },
+    {
+      id: 4,
+      title: "Danderyds TK",
+      image: dtk,
+      location: "Täby",
+      km: "",
+      favourite: "Favourite",
+      bg: "#53a378",
+    },
+    {
+      id: 5,
+      title: "Danderyds TK",
+      image: dtk,
+      location: "Täby",
+      km: "",
+      favourite: "Favourite",
+      bg: "#53a378",
+    },
+    {
+      id: 6,
+      title: "Danderyds TK",
+      image: dtk,
+      location: "Täby",
+      km: "",
+      favourite: "Favourite",
+      bg: "#53a378",
+    },
+    {
+      id: 7,
+      title: "Danderyds TK",
+      image: dtk,
+      location: "Täby",
+      km: "",
+      favourite: "Favourite",
+      bg: "#53a378",
+    },
+    {
+      id: 8,
+      title: "Danderyds TK",
+      image: dtk,
+      location: "Täby",
+      km: "",
+      favourite: "Favourite",
+      bg: "#53a378",
+    },
+    {
+      id: 9,
+      title: "Danderyds TK",
+      image: dtk,
+      location: "Täby",
+      km: "",
+      favourite: "Favourite",
+      bg: "#53a378",
+    },
+    {
+      id: 10,
+      title: "Danderyds TK",
+      image: dtk,
+      location: "Täby",
+      km: "",
+      favourite: "Favourite",
+      bg: "#53a378",
+    },
+  ]
 
   const handleClickOpenDialogBox = () => {
     setOpenDialogBox(true);
@@ -306,7 +437,7 @@ const SearchClub = () => {
     
       {/* Time Section  */}
       <div className={`${classes.root} ${classes.time_sec}`}>
-        {DataSearchClub.time_sec.map(function (data, index_row) {
+        {time_sec.map(function (data, index_row) {
           return (
             <Container>
               <Grid container spacing={3} className={classes.time_item}>
