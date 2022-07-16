@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#0a3133",
         fontSize: "17px",
         marginBottom: "0px",
-        
+
       },
     },
   },
@@ -157,7 +157,7 @@ const useStyles = makeStyles((theme) => ({
       color: "#0a3133",
       fontSize: "22px",
       marginBottom: "5px",
-      
+
     },
     "& .location": {
       display: "flex",
@@ -421,7 +421,7 @@ const useStyles = makeStyles((theme) => ({
   pagination_style: {
     display: 'flex',
     alignItems: 'center',
-    justifyContent:'center',
+    justifyContent: 'center',
   }
   // ---------------------------------end
 }));
@@ -471,7 +471,7 @@ const FindRacqys = () => {
 
   const Card = () => {
     return (
-     
+
       <Box className={classes.cardRounded}>
         <Box className="header" style={{ backgroundImage: `url(${card_bg})` }}>
           <Box className="top">
@@ -539,7 +539,7 @@ const FindRacqys = () => {
 
   return (
     <div className={classes.root_main}>
-      <Appbar/>
+      <Appbar />
       <div className={classes.bannerSection}>
         <Container>
           <Grid container spacing={5}>
@@ -566,8 +566,8 @@ const FindRacqys = () => {
                   className={classes.btn_primary}
                   variant="containedPrimary"
                   color="primary"
-                  // autoFocus
-                  // disabled
+                // autoFocus
+                // disabled
                 >
                   Search
                 </Button>
@@ -606,7 +606,7 @@ const FindRacqys = () => {
           </Grid>
         </Container>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

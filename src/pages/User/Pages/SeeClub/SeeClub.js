@@ -15,6 +15,8 @@ import gtg_logo from "../../../../images/logo/gtg-logo.svg"
 import location from "../../../../images/icon/location.svg"
 import RightSidebar from "./RightSidebar"
 import Shedule from "../../../Shedule/index"
+import AppBarNew from "../../Component/Appbar";
+import Footer from "../../Component/Footer";
 const SeeClub = () => {
   const useStyles = makeStyles((theme) => ({
     root_main: {
@@ -273,7 +275,7 @@ const SeeClub = () => {
 
   return (
     <div className={classes.root_main}>
-      
+      <AppBarNew/>
       <Grid item xs={12}>
         <Box className={classes.mapBox}>
           <img src={map} />
@@ -304,7 +306,7 @@ const SeeClub = () => {
           </Grid>
         </Container>
       </div>
-     
+     <Footer/>
     </div>
   )
 }

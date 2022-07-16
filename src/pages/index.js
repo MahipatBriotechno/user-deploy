@@ -24,6 +24,8 @@ import SelectWithImage from "./User/Component/SelectWithImage/SelectWithImage";
 import VerticalTabsCalender from "./User/Component/VerticalTabsCalender/VerticalTabsCalender";
 import DropdownMenu from "./User/Component/DropdownMenu";
 import { Link as NavLink } from 'gatsby'
+import AppBarNew from "./User/Component/Appbar";
+import Footer from "./User/Component/Footer";
 const styleFunction = styleFunctionSx(compose(spacing, palette));
 const Box = styled.div(styleFunction);
 
@@ -107,6 +109,7 @@ const Home = () => {
 
   return (
     <div>
+      <AppBarNew/>
       <Box className={classes.home_bg}>
         <Box className={classes.dialog_like}>
           <Box sx={{ padding: "30px 30px 0px" }} id="alert-dialog-title">
@@ -118,6 +121,7 @@ const Home = () => {
           <DialogBoxContent />
         </Box>
       </Box>
+      <Footer/>
 
     </div>
   );
