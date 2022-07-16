@@ -24,10 +24,10 @@ import DialogBox from "./DialogBox/DialogBox"
 import SignIn from "./SignIn"
 // import { useNavigate } from "react-router-dom";
 import { Link } from "gatsby"
-const IsLogin = "";
-if (typeof window !== 'undefined') {
-  IsLogin = localStorage.getItem("IsLogin")
-}
+
+
+const IsLogin = typeof window !== 'undefined' ? localStorage.getItem("IsLogin") : null
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
